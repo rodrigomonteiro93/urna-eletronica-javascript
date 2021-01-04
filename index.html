@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Urna eletronica</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body onload="start()">
+
+    <section class="w-100">
+        <div class="center">
+            <h1 class="w-100">
+                Urna eletrônica em javascript
+            </h1>
+            <article class="w-100 urn">
+                <aside class="display">
+                    <div class="w-100 container-display">
+                        <span class="w-100">
+                            SEU VOTO PARA:
+                        </span>
+                        <strong class="w-100"><!-- Name step --></strong>
+                        <ul id="box-vote">
+                            <!-- quantity numbers step -->
+                        </ul>
+                        <div class="w-100 info-candidate">
+                            <!-- return candidate -->
+                        </div>
+                    </div>
+                    <footer class="w-100" id="footer-display">
+                        <p class="w-100">
+                            Aperte:<br />
+                            CONFIRMA para confirmar seu voto<br />
+                            CORRIGE para reiniciar este voto
+                        </p>
+                    </footer>
+                </aside>
+                <aside class="right">
+                    <ul id="keyboard"><!-- generate keyboard --></ul>
+                    <div class="w-100 d-flex wrap buttons-actions">
+                        <button id="btn-white" onclick="btnWhite()" type="button">BRANCO</button>
+                        <button id="btn-reset" onclick="btnReset()" type="button">CORRIGE</button>
+                        <button id="btn-confirm" onclick="btnConfirm()" type="button">CONFIRMA</button>
+                    </div>
+                </aside>
+            </article>
+            <article class="w-100 d-flex wrap" id="list-candidates"></article>
+            <article class="w-100 d-flex wrap" id="resume-votes">
+                <span>
+                    Resumo da sua votação
+                </span>
+                <div class="item"></div>
+            </article>
+        </div>
+    </section>
+
+    <script src="./assets/js/steps.js"></script>
+    <script src="./assets/js/main.js"></script>
+    </body>
+</html>
